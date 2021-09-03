@@ -22,6 +22,7 @@ img {
 a {
   display: block;
   text-decoration: none;
+  color: #333333;
 }
 
 /* ------------------------------------------
@@ -81,6 +82,7 @@ main {
 /* タイトル */
 .product .sub-title {
   font-size: 1rem;
+  font-weight: bolder;
   padding: 18px 0;
   border-top: 1px solid #c3c3c3;
   border-bottom: 1px solid #c3c3c3;
@@ -109,10 +111,9 @@ main {
 }
 
 .product td {
-  border: none;
   border-right: 1px solid #c3c3c3;
   border-bottom: 1px solid #c3c3c3;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .product :last-child {
@@ -132,10 +133,12 @@ main {
 }
 
 #qty-select {
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px); */
+  width: 100%;
   border: 1px solid #c3c3c3;
-  padding-left: 10px;
+  padding: 0 10px;
   appearance: menulist;
+
 }
 
 
@@ -147,6 +150,7 @@ main {
   color: #ffffff;
   background-color: #4b4b4b;
   margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 
@@ -156,13 +160,17 @@ main {
   border-collapse: collapse;
   width: 100%;
   text-align: center;
-  table-layout: fixed;  
+  table-layout: fixed;
+  border: 1px solid #c3c3c3;
 }
 
 .product .width16 {
   width: 16%;
 }
 
+.product .size th {
+  background-color: #ecebeb;
+}
 .product .width28 {
   width: 28%;
 }
@@ -205,19 +213,27 @@ footer p {
   }
 
   /* メイン */
-  main .contents {
+  main {
     display: flex;
     justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
   }
 
   /* ビジュアル */
   .visual {
-    width: 50%;
+    max-width: 400px;
+    /* max-width: 50%; */
     margin-bottom: 0;
   }
 
   /* プロダクト */
   .product {
-    width: 42.5%;
-  }
+    /* width: 42.5%; */
+   max-width: 340px;
+      }
+
+      .contents {
+        margin-right: 0;
+      }
 }
